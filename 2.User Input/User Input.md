@@ -25,3 +25,35 @@ echo "Enter other users'names: "
 read name1 name2 name3  
 echo "$name1, $name2, $name3 are the other users."  
 ```
+Note:\
+     use space for other input not press enter button for other input for variable when you press enter button your input complete you use one `read` command with more variable...
+     like:\
+     rana abobakar\
+     now rana is first variable name and abobakar is second variable name .
+
+# we don't pass any variable with the read command?
+If we don't pass any variable with the read command, then we can pass a built-in variable called REPLY (should be prefixed with the $ sign) while displaying the input. It can be explained using the below 
+`Example 2`\
+`Program:`
+```
+#!/bin/bash  
+  
+# using read command without any variable  
+  
+echo "Enter name : "  
+  
+read  
+  
+echo "Name : $REPLY"  
+```
+# Example 3:
+In this example, we enter the input on the same PROMPT by using the -p command line option as follows:
+
+`read -p PROMPT <variable_name>` \
+`Program:`
+```
+#!/bin/bash  
+  
+read -p "username:" user_var  
+echo "The username is: " $user_var  
+```
