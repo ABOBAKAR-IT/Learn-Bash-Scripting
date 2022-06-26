@@ -57,3 +57,38 @@ In this example, we enter the input on the same PROMPT by using the -p command l
 read -p "username:" user_var  
 echo "The username is: " $user_var  
 ```
+# Example 4:
+This example is to keep the input on silent mode, such that whatever be a user input on the command line will be hidden to others.
+
+So, we pass a username and hide the password (silent mode) by using the command line options (-s, -p) commonly as follows:
+
+`read -sp PROMPT <variable_name> ` 
+Where `-s` allows a user to keep the input on silent mode and `-p` to input on newly command prompt.
+
+`Program:`
+```
+#!/bin/bash  
+  
+read -p "username : " user_var  
+read -sp "password : " pass_var  
+echo  
+echo "username : " $user_var  
+echo "password : "  $pass_var  
+```
+# Example 5:
+ This example is to enter multiple inputs using an array. So use the -a command line option as follows:
+
+`read -a <variable_name> ` 
+Where `-a` helps script to read an array, and variable_name refers to an array.
+
+`Program:`
+```
+#!/bin/bash  
+  
+# Reading multiple inputs using an array  
+  
+echo "Enter names : "  
+read -a names  
+echo "The entered names are : ${names[0]}, ${names[1]}."  
+```
+
