@@ -44,27 +44,37 @@
 # echo -e "The background color is: ${bg_blue}blue${clear}!"
 # echo -e "The background color is: ${bg_magenta}magenta${clear}!"
 # echo -e "The background color is: ${bg_cyan}cyan${clear}!"
-echo "my
- name 
- is 
- abobakar"
- #output in new line
-echo "my \
-name \
-is \
-abobakar"
-# output in same line
-echo 'my 
-name 
-is 
-abobakar'
-#output in new lines
 
-echo 'my \
-name \
-is \
-abobakar'
-#output same text with \
 
-echo -e "my \t name \t is \t abobakar"
-echo -e "my \v name \v is \v abobakar"
+# echo "my
+#  name 
+#  is 
+#  abobakar"
+#  #output in new line
+# echo "my \
+# name \
+# is \
+# abobakar"
+# # output in same line
+# echo 'my 
+# name 
+# is 
+# abobakar'
+# #output in new lines
+
+# echo 'my \
+# name \
+# is \
+# abobakar'
+# #output same text with \
+
+# echo -e "my \t name \t is \t abobakar"
+# echo -e "my \v name \v is \v abobakar"
+ 
+ ##### user define variable
+
+name="Rana Abobakar"
+age="22"
+echo "my Name is ${name} i am ${age} year old"
+skill="program"
+echo " I am ${skill}er my skill is ${skill}ing"
