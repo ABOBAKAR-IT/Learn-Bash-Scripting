@@ -73,8 +73,26 @@
  
  ##### user define variable
 
-name="Rana Abobakar"
-age="22"
-echo "my Name is ${name} i am ${age} year old"
-skill="program"
-echo " I am ${skill}er my skill is ${skill}ing"
+# name="Rana Abobakar"
+# age="22"
+# echo "my Name is ${name} i am ${age} year old"
+# skill="program"
+# echo " I am ${skill}er my skill is ${skill}ing"
+
+env #show all system variable
+
+echo ${SHELL}
+echo ${HOME}
+echo ${OSTYPE}
+echo $$
+echo ${PPID}
+
+sleap 60
+ echo $PWD
+ echo $HSOTNAME
+ echo $UiD
+  echo
+  man bash # show bash variable
+   
+   echo ${SECONDS} #    show time who script take time to execute.
+
