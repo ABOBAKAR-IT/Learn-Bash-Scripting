@@ -98,24 +98,34 @@
 #    echo ${SECONDS} #    show time who script take time to execute.
 #####################****************9*************
 
-read name
-read age
- echo "Hello ${name}, amd your age is ${age}"
+# read name
+# read age
+#  echo "Hello ${name}, amd your age is ${age}"
 
 
- # Forget write variable name ofter read command
- # if you forget to write variable name ofter read command your input store in system define variable *REPLY*
+#  # Forget write variable name ofter read command
+#  # if you forget to write variable name ofter read command your input store in system define variable *REPLY*
 
-  read
-  echo ${REPLY}
+#   read
+#   echo ${REPLY}
    
-   read -p "please enter your name " name
-   read -p "please inter your age " age
-   read -p "please enter your password " -s passwd
-   echo 
-   echo "Hello ${name}  your age is ${age} and your password is ${passwd}"
+#    read -p "please enter your name " name
+#    read -p "please inter your age " age
+#    read -p "please enter your password " -s passwd
+#    echo 
+#    echo "Hello ${name}  your age is ${age} and your password is ${passwd}"
 
 
    ##########**************10************
 
-   
+   # Command line Argument
+
+
+ echo ${0} # script name
+ echo ${1} # first argument
+ echo ${2} # second argument
+ 
+ name=$1
+ age=$2
+
+ echo " my name is ${name}, and my age is ${age}"
