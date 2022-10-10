@@ -169,11 +169,22 @@
 # echo ${Date}
 
 ############************13**********888
- readonly name="ABOBAKAR"
+#  readonly name="ABOBAKAR"
   
-  echo ${name}
-  name="rana" # error 
-  age=12
-  echo " age is ${age}"
-  unset age
-  echo " age is ${age}"
+#   echo ${name}
+#   name="rana" # error 
+#   age=12
+#   echo " age is ${age}"
+#   unset age
+#   echo " age is ${age}"
+
+#################***********14**************
+
+string="my name is abobakar"
+echo ${string}
+echo ${string^}
+echo ${string^^}
+string2="MY NAME IS RANA"
+echo ${string2,}
+echo ${string2,,}
+echo ${#string2}
