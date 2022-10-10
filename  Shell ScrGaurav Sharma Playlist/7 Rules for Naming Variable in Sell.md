@@ -21,3 +21,20 @@ Following are the examples of invalid variable names −
 VAR1-VAR2
 VAR_A!
 ```
+ # Not use Space Before or After = Sign
+## Space Before = sign
+name ="ABOBAKAR"
+
+`name` consider it as Command <br>
+`"ABOBAKAR"` consider it as Argument <br>
+so shell generate error
+
+## Space After = sign
+name= "ABOBAKAR"
+
+`name` consider it as variable <br>
+`"ABOBAKAR"` consider it as Command <br>
+so shell generate error
+
+# Best to Use {} for show variable value
+use {} bracket because when we use $11 only $1 value shows and 1 concrete the $1 value.
