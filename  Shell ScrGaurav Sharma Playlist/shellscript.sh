@@ -78,21 +78,44 @@
 # echo "my Name is ${name} i am ${age} year old"
 # skill="program"
 # echo " I am ${skill}er my skill is ${skill}ing"
+ 
+ #####################       **** 8   ********
+# env #show all system variable
 
-env #show all system variable
+# echo ${SHELL}
+# echo ${HOME}
+# echo ${OSTYPE}
+# echo $$
+# echo ${PPID}
 
-echo ${SHELL}
-echo ${HOME}
-echo ${OSTYPE}
-echo $$
-echo ${PPID}
-
-sleap 60
- echo $PWD
- echo $HSOTNAME
- echo $UiD
-  echo
-  man bash # show bash variable
+# sleap 60
+#  echo $PWD
+#  echo $HSOTNAME
+#  echo $UiD
+#   echo
+#   man bash # show bash variable
    
-   echo ${SECONDS} #    show time who script take time to execute.
+#    echo ${SECONDS} #    show time who script take time to execute.
+#####################****************9*************
 
+read name
+read age
+ echo "Hello ${name}, amd your age is ${age}"
+
+
+ # Forget write variable name ofter read command
+ # if you forget to write variable name ofter read command your input store in system define variable *REPLY*
+
+  read
+  echo ${REPLY}
+   
+   read -p "please enter your name " name
+   read -p "please inter your age " age
+   read -p "please enter your password " -s passwd
+   echo 
+   echo "Hello ${name}  your age is ${age} and your password is ${passwd}"
+
+
+   ##########**************10************
+
+   
