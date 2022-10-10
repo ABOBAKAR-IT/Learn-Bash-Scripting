@@ -118,14 +118,41 @@
 
    ##########**************10************
 
-   # Command line Argument
+#    Command line Argument
 
 
- echo ${0} # script name
- echo ${1} # first argument
- echo ${2} # second argument
+#  echo ${0} # script name
+#  echo ${1} # first argument
+#  echo ${2} # second argument
  
- name=$1
- age=$2
+#  name=$1
+#  age=$2
 
- echo " my name is ${name}, and my age is ${age}"
+#  echo " my name is ${name}, and my age is ${age}"
+
+####################**11****************
+echo $1
+ echo $2
+ echo $3
+ echo $4
+ echo $5
+ echo $6
+ echo $7
+ echo $8
+ echo $9
+ echo $10
+ echo $11
+ echo $12
+ echo " using {} "
+ echo ${1}
+ echo ${2}
+ echo ${3}
+ echo ${4}
+ echo ${5}
+ echo ${6}
+ echo ${7}
+ echo ${8}
+ echo ${9}
+ echo ${10}
+ echo ${11}
+ echo ${12}
