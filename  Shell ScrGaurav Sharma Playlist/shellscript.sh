@@ -131,28 +131,39 @@
 #  echo " my name is ${name}, and my age is ${age}"
 
 ####################**11****************
-echo $1
- echo $2
- echo $3
- echo $4
- echo $5
- echo $6
- echo $7
- echo $8
- echo $9
- echo $10
- echo $11
- echo $12
- echo " using {} "
- echo ${1}
- echo ${2}
- echo ${3}
- echo ${4}
- echo ${5}
- echo ${6}
- echo ${7}
- echo ${8}
- echo ${9}
- echo ${10}
- echo ${11}
- echo ${12}
+# echo $1
+#  echo $2
+#  echo $3
+#  echo $4
+#  echo $5
+#  echo $6
+#  echo $7
+#  echo $8
+#  echo $9
+#  echo $10
+#  echo $11
+#  echo $12
+#  echo " using {} "
+#  echo ${1}
+#  echo ${2}
+#  echo ${3}
+#  echo ${4}
+#  echo ${5}
+#  echo ${6}
+#  echo ${7}
+#  echo ${8}
+#  echo ${9}
+#  echo ${10}
+#  echo ${11}
+#  echo ${12}
+
+ #############***********12**************
+ 
+ current_working_dir=`pwd` # old method
+ echo ${current_working_dir}
+
+ #current_working_dir=$(pwd) # new method
+ #echo ${current_working_dir}
+
+Date=$(date +"%D - %T")
+echo ${Date}
