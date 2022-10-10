@@ -159,11 +159,21 @@
 
  #############***********12**************
  
- current_working_dir=`pwd` # old method
- echo ${current_working_dir}
+#  current_working_dir=`pwd` # old method
+#  echo ${current_working_dir}
 
  #current_working_dir=$(pwd) # new method
  #echo ${current_working_dir}
 
-Date=$(date +"%D - %T")
-echo ${Date}
+# Date=$(date +"%D - %T")
+# echo ${Date}
+
+############************13**********888
+ readonly name="ABOBAKAR"
+  
+  echo ${name}
+  name="rana" # error 
+  age=12
+  echo " age is ${age}"
+  unset age
+  echo " age is ${age}"
