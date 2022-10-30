@@ -180,11 +180,42 @@
 
 #################***********14**************
 
-string="my name is abobakar"
-echo ${string}
-echo ${string^}
-echo ${string^^}
-string2="MY NAME IS RANA"
-echo ${string2,}
-echo ${string2,,}
-echo ${#string2}
+# string="my name is abobakar"
+# echo ${string}
+# echo ${string^}
+# echo ${string^^}
+# string2="MY NAME IS RANA"
+# echo ${string2,}
+# echo ${string2,,}
+# echo ${#string2}
+
+############******15******
+string="abcabobakarabvxyz"
+
+# echo "${string:0}" # abcabobakarabvxyz
+# echo "${string:1}" # bcabobakarabvxyz
+# echo "${string:4}" # bobakarabvxyz
+
+# echo "${string:0:3}" #abc
+# echo "${string:3:3}" #abo
+
+# echo "${string: -5}" #bvxyz
+
+
+
+echo "${string#a*c}" # from starting shortest match
+echo "${string##a*c}" # for starting longest match
+
+echo "${string%a*c}" # from ending shortest match
+echo "${string%%a*c}" # from ending longest match
+
+
+echo "${string/abc/xyz}" # replace abc to eyx, shortest match
+echo "${string//abc/xyz}" # replace abc to eyx, longest match
+
+echo "${string/abc}" # remove abc from string , shortest match
+echo "${string//abc}" # remove abc from string , longest match
+
+
+
+
