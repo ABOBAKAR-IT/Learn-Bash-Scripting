@@ -242,15 +242,51 @@ string="abcabobakarabvxyz"
 
  # Arithmetic Operator
 
- a=5
-b=6
-echo "$((a+b))"
-echo "$((a-b))"
-echo "$((a*b))"
-echo "$((a/b))" # 5/6
-echo "$((a%b))"
-echo "$((2**3))" # 2*2*2
-((a++)) # a=a+1
-echo $a
-((a+=3)) # a=a+3
-echo $a
+#  a=5
+# b=6
+# echo "$((a+b))"
+# echo "$((a-b))"
+# echo "$((a*b))"
+# echo "$((a/b))" # 5/6
+# echo "$((a%b))"
+# echo "$((2**3))" # 2*2*2
+# ((a++)) # a=a+1
+# echo $a
+# ((a+=3)) # a=a+3
+# echo $a
+# i=1
+# while true
+# do
+# if [ $((i%2)) != 0 ]
+# then
+# echo $i
+# fi
+# if [ $i == 100 ]
+# then 
+# exit
+# fi
+# ((i++))
+
+# done
+
+
+
+###################################*********** funtions
+function install(){
+    #### installations code.
+    echo "installationscode1"
+    
+}
+configuration(){
+    # configurations code
+    echo "configcode1"    
+}
+
+
+function deploy {
+    # deploy code.
+    echo "deploy code 1"
+}
+configuration
+install
+deploy
