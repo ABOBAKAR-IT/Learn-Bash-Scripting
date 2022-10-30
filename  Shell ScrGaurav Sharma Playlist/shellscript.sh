@@ -221,13 +221,21 @@ string="abcabobakarabvxyz"
 
 ############## set default value
 
-read -p "Please enter your name" name
-name=${name:-rana} #rana is default value for name variable
-echo " Hello ${name}"
+# read -p "Please enter your name" name
+# name=${name:-rana} #rana is default value for name variable
+# echo " Hello ${name}"
 
-yourname=${unsetvariable-abobakar}
-echo $yourname
+# yourname=${unsetvariable-abobakar}
+# echo $yourname
 
-myname=""
-mytestname=${myname:-kali}
-echo ${mytestname}
+# myname=""
+# mytestname=${myname:-kali}
+# echo ${mytestname}
+
+ ########## Check A Variable is set or not using below script
+
+
+name="gaurav"
+: ${name:?" please set variable values. "}
+echo "i am here."
+ 
