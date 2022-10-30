@@ -1,5 +1,7 @@
  # Check A Variable is set or not using below script
 
+ Null Command or Colon Command no effect, the command does nothing. Exit status always success.
+if value not set : command exit the script.
  ```
  #!/bin/bash
 # name="gaurav"
