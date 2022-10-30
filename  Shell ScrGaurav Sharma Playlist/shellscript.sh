@@ -203,19 +203,31 @@ string="abcabobakarabvxyz"
 
 
 
-echo "${string#a*c}" # from starting shortest match
-echo "${string##a*c}" # for starting longest match
+# echo "${string#a*c}" # from starting shortest match
+# echo "${string##a*c}" # for starting longest match
 
-echo "${string%a*c}" # from ending shortest match
-echo "${string%%a*c}" # from ending longest match
-
-
-echo "${string/abc/xyz}" # replace abc to eyx, shortest match
-echo "${string//abc/xyz}" # replace abc to eyx, longest match
-
-echo "${string/abc}" # remove abc from string , shortest match
-echo "${string//abc}" # remove abc from string , longest match
+# echo "${string%a*c}" # from ending shortest match
+# echo "${string%%a*c}" # from ending longest match
 
 
+# echo "${string/abc/xyz}" # replace abc to eyx, shortest match
+# echo "${string//abc/xyz}" # replace abc to eyx, longest match
+
+# echo "${string/abc}" # remove abc from string , shortest match
+# echo "${string//abc}" # remove abc from string , longest match
 
 
+
+
+############## set default value
+
+read -p "Please enter your name" name
+name=${name:-rana} #rana is default value for name variable
+echo " Hello ${name}"
+
+yourname=${unsetvariable-abobakar}
+echo $yourname
+
+myname=""
+mytestname=${myname:-kali}
+echo ${mytestname}
