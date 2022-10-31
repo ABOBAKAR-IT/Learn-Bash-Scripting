@@ -314,12 +314,13 @@ string="abcabobakarabvxyz"
 # install "nginx"
 # configuration "nginx"
 # deploy "webapplication"
-
-function showname(){
-   local first_name=$1
-    last_name=$2
+############## local variable
+# function showname(){
+#    local first_name=$1
+#     last_name=$2
     
-}
-showname rana abobakar
-echo ${first_name}
-echo ${last_name}
+# }
+# showname rana abobakar
+# echo ${first_name}
+# echo ${last_name}
+
