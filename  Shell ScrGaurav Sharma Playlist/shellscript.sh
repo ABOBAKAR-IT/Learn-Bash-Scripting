@@ -293,24 +293,33 @@ string="abcabobakarabvxyz"
 
 
 
-######### pass argument in function
-function install(){
-    return 2
-    echo "executing ${FUNCNAME} - start"
-    echo "installing ${1}"
-    echo "executing ${FUNCNAME} - end"
-}
-function configuration(){
-    echo "config ${1}"
-    echo "${FUNCNAME}"
-return 2 # stop function
+# ######### pass argument in function
+# function install(){
+#     return 2
+#     echo "executing ${FUNCNAME} - start"
+#     echo "installing ${1}"
+#     echo "executing ${FUNCNAME} - end"
+# }
+# function configuration(){
+#     echo "config ${1}"
+#     echo "${FUNCNAME}"
+# return 2 # stop function
 
-}
+# }
 
-function deploy() {
-    echo "deploying ${1}"
-    echo "${FUNCNAME}"
+# function deploy() {
+#     echo "deploying ${1}"
+#     echo "${FUNCNAME}"
+# }
+# install "nginx"
+# configuration "nginx"
+# deploy "webapplication"
+
+function showname(){
+   local first_name=$1
+    last_name=$2
+    
 }
-install "nginx"
-configuration "nginx"
-deploy "webapplication"
+showname rana abobakar
+echo ${first_name}
+echo ${last_name}
