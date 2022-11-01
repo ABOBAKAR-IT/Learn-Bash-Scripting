@@ -18,22 +18,22 @@ esac
 
 output
 ```
-┌──(gaurav㉿learning-ocean)-[~/shellscript-youtube]
+┌──(abobakar㉿learning-ocean)-[~/shellscript-youtube]
 └─$ ./casethree.sh
 enter y or n: y
 you answer yes
 
-┌──(gaurav㉿learning-ocean)-[~/shellscript-youtube]
+┌──(abobakar㉿learning-ocean)-[~/shellscript-youtube]
 └─$ ./casethree.sh
 enter y or n: ye
 Invalid Answer
 
-┌──(gaurav㉿learning-ocean)-[~/shellscript-youtube]
+┌──(abobakar㉿learning-ocean)-[~/shellscript-youtube]
 └─$ ./casethree.sh
 enter y or n: yes
 you answer yes
 
-┌──(gaurav㉿learning-ocean)-[~/shellscript-youtube]
+┌──(abobakar㉿learning-ocean)-[~/shellscript-youtube]
 └─$ ./casethree.sh
 enter y or n: n
 you answer no
@@ -57,12 +57,13 @@ esac
 ```
 output
 ```
-┌──(gaurav㉿learning-ocean)-[~/shellscript-youtube]
+┌──(abobakar㉿learning-ocean)-[~/shellscript-youtube]
 └─$ ./casestatement-2.sh
 enter y or ny
 you enter YesCase Statement with Regex
+```
 Example
-
+```
 read -p "enter y or n: " ANSWER
 case "$ANSWER" in
     [Yy] | [Yy][Ee][Ss])
@@ -76,33 +77,33 @@ case "$ANSWER" in
         ;;
         exit
 esac
-
+```
 
 output
-
-┌──(gaurav㉿learning-ocean)-[~/shellscript-youtube]
+```
+┌──(abobakar㉿learning-ocean)-[~/shellscript-youtube]
 └─$ ./casethree.sh
 enter y or n: y
 you answer yes
 
-┌──(gaurav㉿learning-ocean)-[~/shellscript-youtube]
+┌──(abobakar㉿learning-ocean)-[~/shellscript-youtube]
 └─$ ./casethree.sh
 enter y or n: ye
 Invalid Answer
 
-┌──(gaurav㉿learning-ocean)-[~/shellscript-youtube]
+┌──(abobakar㉿learning-ocean)-[~/shellscript-youtube]
 └─$ ./casethree.sh
 enter y or n: yes
 you answer yes
 
-┌──(gaurav㉿learning-ocean)-[~/shellscript-youtube]
+┌──(abobakar㉿learning-ocean)-[~/shellscript-youtube]
 └─$ ./casethree.sh
 enter y or n: n
 you answer no
-
+```
 
 Example-2
-
+```
 #!/bin/bash
 read -p "enter y or n" answer
 case ${answer,,} in
@@ -116,19 +117,21 @@ case ${answer,,} in
         echo "Invalid Anser"
         ;;
 esac
+```
+output
+```
 
-
-┌──(gaurav㉿learning-ocean)-[~/shellscript-youtube]
+┌──(abobakar㉿learning-ocean)-[~/shellscript-youtube]
 └─$ ./casestatement-2.sh
 enter y or ny
 you enter Yes
 
-┌──(gaurav㉿learning-ocean)-[~/shellscript-youtube]
+┌──(abobakar㉿learning-ocean)-[~/shellscript-youtube]
 └─$ ./casestatement-2.sh
 enter y or nyeeeeeee
 you enter Yes
 
-┌──(gaurav㉿learning-ocean)-[~/shellscript-youtube]
+┌──(abobakar㉿learning-ocean)-[~/shellscript-youtube]
 └─$ ./casestatement-2.sh
 enter y or nyeeeeeee
 you enter Yes
