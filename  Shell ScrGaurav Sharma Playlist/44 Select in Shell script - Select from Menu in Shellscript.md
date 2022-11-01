@@ -32,7 +32,7 @@ done
 ```
 output
 ```
-┌──(gaurav㉿learning-ocean)-[~/shellscript-youtube]
+┌──(abobakar㉿learning-ocean)-[~/shellscript-youtube]
 └─$ ./select-statement.sh
 1) linux
 2) windows
