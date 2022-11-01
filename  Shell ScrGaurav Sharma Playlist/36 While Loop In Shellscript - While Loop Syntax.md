@@ -59,7 +59,7 @@ done
 ```
 output:
 ```
-┌──(gaurav㉿learning-ocean)-[~/shellscript-youtube]
+┌──(abobakar㉿learning-ocean)-[~/shellscript-youtube]
 └─$ ./while-loop.sh
 please enter a number 2
 2
