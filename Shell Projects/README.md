@@ -49,3 +49,16 @@ fi ;
   sudo systemctl restart nginx;
   exit'
 ```
+
+
+# Rename All image *.jpd to [1..10].jpg
+```
+#!/bin/bash
+
+counter=1
+
+for file in *.jpg; do
+  mv "$file" "$counter.jpg"
+counter=$((counter+1))
+done
+```
